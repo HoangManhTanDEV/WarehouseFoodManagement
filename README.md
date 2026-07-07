@@ -1,3 +1,4 @@
+develop
 # 🍏 Warehouse Food Management System
 
 <p align="center">
@@ -6,7 +7,7 @@
   <img src="https://img.shields.io/github/last-commit/HoangManhTanDEV/WarehouseFoodManagement?style=for-the-badge&color=green" alt="Last Commit">
 </p>
 
----
+
 
 ## 📝 Giới Thiệu Dự Án
 
@@ -18,7 +19,7 @@
 *   📊 **Báo cáo xuất/nhập tồn:** Thống kê chi tiết lượng hàng hóa lưu kho theo thời gian thực.
 *   ⚡ **Tối ưu hiệu suất:** Cấu trúc dữ liệu chuẩn giúp xử lý tìm kiếm và lọc dữ liệu cực nhanh.
 
----
+
 
 ## 🛠️ Công Nghệ Sử Dụng
 
@@ -39,3 +40,6 @@ WarehouseFoodManagement/
 │   └── view/             # Giao diện người dùng (Console/GUI)
 ├── .gitignore            # Cấu hình bỏ qua các file không cần thiết khi push lên Git
 └── README.md             # Tài liệu hướng dẫn dự án
+
+
+main

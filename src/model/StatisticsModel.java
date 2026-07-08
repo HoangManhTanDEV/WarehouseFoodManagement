@@ -120,7 +120,7 @@ public class StatisticsModel {
 
         return stats;
     }
-
+/*
     // Thống kê top sản phẩm bán chạy
     public List<Map<String, Object>> getTopSellingProducts(int limit, java.sql.Date startDate, java.sql.Date endDate) {
         List<Map<String, Object>> topProducts = new ArrayList<>();
@@ -156,7 +156,7 @@ public class StatisticsModel {
         }
         return topProducts;
     }
-
+*/
     // Thống kê nhập xuất theo tháng
     public List<Map<String, Object>> getMonthlyStatistics(int year) {
         List<Map<String, Object>> monthlyStats = new ArrayList<>();

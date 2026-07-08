@@ -1,7 +1,4 @@
- feature/auth
-Hạ Thị Thanh đã Test sửa code 
 
-develop
 # 🍏 Warehouse Food Management System
 
 <p align="center">

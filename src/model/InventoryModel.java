@@ -132,7 +132,6 @@ public class InventoryModel {
         }
         return summary;
     }
-
     // Tìm kiếm sản phẩm theo tên hoặc mã
     public List<Map<String, Object>> searchInventory(String keyword) {
         List<Map<String, Object>> inventory = new ArrayList<>();
@@ -166,6 +165,7 @@ public class InventoryModel {
                 item.put("supplier_name", rs.getString("supplier_name"));
                 inventory.add(item);
             }
+            test 123
         } catch (SQLException e) {
             e.printStackTrace();
         }

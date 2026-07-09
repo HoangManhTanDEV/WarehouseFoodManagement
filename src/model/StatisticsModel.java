@@ -169,13 +169,20 @@ public class StatisticsModel {
             stat.put("profit", 0.0);
             monthlyStats.add(stat);
         }
-
+/*
         // Thống kê nhập theo tháng
         String importSql = "SELECT MONTH(import_date) as month, SUM(total_amount) as total " +
                 "FROM import_receipts " +
                 "WHERE YEAR(import_date) = ? " +
                 "GROUP BY MONTH(import_date)";
-
+*/
+        // Giả sử dấu hỏi chấm (?) thứ nhất nhận giá trị là "2026-01-01" và dấu hỏi thứ hai là "2026-12-31"
+String importSql = "SELECT MONTH(import_date) AS month, SUM(total_amount) AS total " +
+                   "FROM import_receipts " +
+                   "WHERE import_date BETWEEN ? AND ? " +
+                   "GROUP BY MONTH(import_date) " +
+                   "ORDER BY month ASC"; // Thêm ORDER BY để dữ liệu trả về từ tháng 1 đến tháng 12 ngăn nắp
+        
         // Thống kê xuất theo tháng
         String exportSql = "SELECT MONTH(export_date) as month, SUM(total_amount) as total " +
                 "FROM export_receipts " +

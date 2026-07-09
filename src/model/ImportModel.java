@@ -1,5 +1,5 @@
 package com.warehouse.model;
-
+1
 import com.warehouse.utils.DatabaseConnection;
 import java.sql.*;
 import java.util.*;

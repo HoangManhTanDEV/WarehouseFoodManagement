@@ -1,11 +1,5 @@
 
-# 🍏 Warehouse Food Management System
 
-<p align="center">
-  <img src="https://img.shields.io/github/repo-size/HoangManhTanDEV/WarehouseFoodManagement?style=for-the-badge" alt="Repository Size">
-  <img src="https://img.shields.io/github/languages/top/HoangManhTanDEV/WarehouseFoodManagement?style=for-the-badge&color=orange" alt="Top Language">
-  <img src="https://img.shields.io/github/last-commit/HoangManhTanDEV/WarehouseFoodManagement?style=for-the-badge&color=green" alt="Last Commit">
-</p>
 
 
 

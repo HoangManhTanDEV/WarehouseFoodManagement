@@ -171,21 +171,5 @@ public class InventoryModel {
         }
         return inventory;
     }
-    // Đếm sản phẩm sắp hết hạn trong 30 ngày
-public int countExpiringProducts() {
-    String sql = "SELECT COUNT(*) FROM products " +
-                 "WHERE expiry_date BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 30 DAY)";
-
-    try (Connection conn = DatabaseConnection.getConnection();
-         Statement stmt = conn.createStatement();
-         ResultSet rs = stmt.executeQuery(sql)) {
-
-        if (rs.next()) {
-            return rs.getInt(1);
-        }
-    } catch (SQLException e) {
-        e.printStackTrace();
-    }
-    return 0;
 }
 }

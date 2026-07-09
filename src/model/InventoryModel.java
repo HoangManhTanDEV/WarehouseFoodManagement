@@ -165,7 +165,7 @@ public class InventoryModel {
                 item.put("supplier_name", rs.getString("supplier_name"));
                 inventory.add(item);
             }
-            //test 1
+            test 123
         } catch (SQLException e) {
             e.printStackTrace();
         }

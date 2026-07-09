@@ -1,4 +1,3 @@
-
 # 🍏 Warehouse Food Management System
 
 <p align="center">

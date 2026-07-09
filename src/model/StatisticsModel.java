@@ -175,9 +175,7 @@ public class StatisticsModel {
                 "FROM import_receipts " +
                 "WHERE YEAR(import_date) = ? " +
                 "GROUP BY MONTH(import_date)";
-
-        
-        //CODE THỬ NGHIỆM
+    //CODE THỬ NGHIỆM
       /*  // Giả sử dấu hỏi chấm (?) thứ nhất nhận giá trị là "2026-01-01" và dấu hỏi thứ hai là "2026-12-31"
 String importSql = "SELECT MONTH(import_date) AS month, SUM(total_amount) AS total " +
                    "FROM import_receipts " +
@@ -191,7 +189,14 @@ String importSql = "SELECT MONTH(import_date) AS month, SUM(total_amount) AS tot
                 "FROM export_receipts " +
                 "WHERE YEAR(export_date) = ? " +
                 "GROUP BY MONTH(export_date)";
+//CODE THỬ NGHIỆM THỐNG KÊ THEO THÁNG
+       /* String exportSql = "SELECT MONTH(export_date) AS month, SUM(total_amount) AS total " +
+                   "FROM export_receipts " +
+                   "WHERE export_date BETWEEN ? AND ? " +
+                   "GROUP BY MONTH(export_date) " +
+                   "ORDER BY month ASC";*/
 
+        
         try (Connection conn = DatabaseConnection.getConnection()) {
             // Lấy dữ liệu nhập
             try (PreparedStatement pstmt = conn.prepareStatement(importSql)) {

@@ -132,7 +132,7 @@ public class InventoryModel {
         }
         return summary;
     }
-
+//qwerty12345677890098
     // Tìm kiếm sản phẩm theo tên hoặc mã
     public List<Map<String, Object>> searchInventory(String keyword) {
         List<Map<String, Object>> inventory = new ArrayList<>();
